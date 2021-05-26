@@ -6,11 +6,13 @@
 //portas
 //array
 #define sensores_array 13;  
+
 //laterais
 #define sensor_lateral_esquerdo 35;
 #define indicador_lateral_esquerdo 1;
 #define sensor_lateral_direito 34;
 #define indicador_lateral_direito 1;
+
 //drive
 #define pwm_direito_a 4;
 #define ain1 21;
@@ -21,7 +23,6 @@
 #define b1n2 19;
 
 //encoder
-
 #define encoder_motor_dir_a 17;
 #define encoder_motor_dir_b 16;
 #define encoder_motor_esq_a 36;
@@ -29,7 +30,19 @@
 
 
 //pista
-
 #define qtde_curvas 1;
 #define curvas_esquerda 1; //??????????????
 #define distancia da pista 1;
+
+//PID
+float Kp = 0;
+float Ki = 0;
+float Kd = 0;
+
+float P = 0;
+float I = 0; //sempre vai ser 0
+float D = 0;
+
+float erro = 0;
+float erro_anterior = 0;
+float PID = 0
