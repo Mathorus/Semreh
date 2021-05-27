@@ -44,5 +44,5 @@ float I = 0; //sempre vai ser 0
 float D = 0;
 
 float erro = 0;
-float erro_anterior = 0;
+float erro_ant = 0;
 float PID = 0
