@@ -4,9 +4,14 @@
 #include <Esp32Encoder.h>
 #include <setup.h>
 
-#include <PID.h>
+#include <ctrl_pid.h>
 
-PID pid(Kp, Ki, Kd, P, I, D, erro, erro_ant); //criacao do objeto PID (ta com problema)
+
+CONFIG config;
+
+PID pid(config.pid.Kp, config.pid.Ki, config.pid.Kd, 
+        config.pid.P, config.pid.I, config.pid.D,
+        config.pid.erro, config.pid.erro_ant); //criacao do objeto PID (ta com problema)
 
 
 
