@@ -20,7 +20,7 @@ float PID::calculo_pid(float _Kp, float _Ki, float _Kd, float P, float _I, float
     }
 
     P = _erro;
-    _I = _I + _erro;
+    _I += _erro;
 
     if(_I > 255){
         _I = 255;

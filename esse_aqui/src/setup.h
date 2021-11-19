@@ -40,11 +40,11 @@ class pid_config{
     public:
         float Kp = 0;
         float Ki = 0;
-        float Kd = 0;
+        float Kd = 0; //(kp-1)*10
 
         float P = 0;
         float I = 0; //sempre vai ser 0
-        float D = 0;
+        float D = 0; 
 
         float erro = 0;
         float erro_ant = 0;
